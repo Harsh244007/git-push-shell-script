@@ -8,6 +8,7 @@ for (( i=2; i<=$#; i++ )); do
 commitMessage="$commitMessage ${!i}"
 done
 
+git pull
 git add .
 git commit -m "* ${commitMessage^} ."
 git push
